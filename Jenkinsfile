@@ -1,5 +1,6 @@
 node{
 def chaitu = tool name: "MAVEN"    
+echo "The node name is: ${env.NODE_NAME}"    
 stage('CHECKOUT'){
     git branch: 'FIRST', url: 'https://github.com/chaithanya1812/pass.git'    
 }
