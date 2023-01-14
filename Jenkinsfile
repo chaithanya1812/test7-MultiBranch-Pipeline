@@ -1,6 +1,8 @@
 node{
 def chaitu = tool name: "MAVEN"    
-echo "The node name is: ${env.NODE_NAME}"    
+    
+echo "The node name is: ${env.NODE_NAME}"   
+properties([pipelineTriggers([githubPush(), pollSCM('*/2 * * * *')])])    
 stage('CHECKOUT'){
     git branch: 'FIRST', url: 'https://github.com/chaithanya1812/pass.git'    
 }
