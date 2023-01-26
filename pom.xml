@@ -18,8 +18,8 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
-    <sonar.login>8dc7fbe5e7c92b821cd178c72794546c402ae5b1</sonar.login>
-    <sonar.organization>chaitumaven</sonar.organization>
+    <sonar.login>f49b3387c9f63edc028ff285a97712919158bf90</sonar.login>
+    <sonar.organization>mavenproject1</sonar.organization>
   </properties>
 
   <dependencies>
