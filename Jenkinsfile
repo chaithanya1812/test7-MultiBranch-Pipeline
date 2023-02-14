@@ -44,7 +44,7 @@ pipeline {
         }
         stage('Run containers'){
             steps{
-                sh 'docker run -d --name c1 -p 8090:8080 chaitu1812/${BRANCH_NAME}'   
+                sh 'docker run -d --name c2 -p 8091:8080 chaitu1812/${BRANCH_NAME}'   
             }
         }
 
