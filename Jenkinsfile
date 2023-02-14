@@ -8,7 +8,8 @@ pipeline {
     options{
         ansiColor('xterm')
     }
-   /* stages{
+    stages{
+        /*
         stage('Checkout'){
             steps{
                     //git 'https://github.com/chaithanya1812/pass.git'
