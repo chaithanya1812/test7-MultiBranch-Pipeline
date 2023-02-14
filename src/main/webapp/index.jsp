@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Password Generator</h2>
+      <h2>Password Generator UT-Branch</h2>
       <div class="result-container">
         <span id="result"></span>
         <button class="btn" id="clipboard">
