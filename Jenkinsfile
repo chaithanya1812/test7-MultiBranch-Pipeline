@@ -8,7 +8,7 @@ pipeline {
     options{
         ansiColor('xterm')
     }
-    stages{
+   /* stages{
         stage('Checkout'){
             steps{
                     //git 'https://github.com/chaithanya1812/pass.git'
@@ -16,7 +16,7 @@ pipeline {
                     echo "\033[1;4;37;42m GIT STAGE IS COMPLETED \033[0m"
             }
         }
-        
+        */
     
         stage('Build'){
             steps{
