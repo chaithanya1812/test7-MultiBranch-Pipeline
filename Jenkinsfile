@@ -46,7 +46,7 @@ pipeline {
             steps{
                 sh 'docker stop ${BRANCH_NAME} || true'
                 sh 'docker rm -f ${BRANCH_NAME} || true'
-                sh 'docker rmi chaitu1812/${BRANCH_NAME} || true'
+                sh 'docker rmi  chaitu1812/${BRANCH_NAME} || true'
                 sh 'docker rmi $(docker images -q -f dangling=true) || true'
               }
         }
