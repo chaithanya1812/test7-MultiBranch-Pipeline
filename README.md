@@ -38,16 +38,16 @@
 
 ## Features
 
-- Complte CI-CD established in this Project.
-- NO Chance of storing dangling images.
-- Fully AUTOMATED-DEPLOYMENT
-- Parallel Development
+- Complete CI-CD established in this Project.
+- NO chance of storing dangling images of every branch job.
+- Fully AUTOMATED-DEPLOYMENT.
+- Parallel Development.
 
 ## Lessons Learned
  1) if you want mentioning of BRANCH_NAME its works only (MULTIPIPELINE PROJECTS ONLY).
  2) 6-Hours consistency needs to make this PROJECT.
- 3) Don't give Git_Hub branch name in (Capitals Letters) becz docker repository name doesn't take capitals letters.
- 4) DONT Mention pollscm && build-periodcally && GIT-HUB(webhooks) in Jenkinsfile becz it works in Multibranch-pipeline projects.
+ 3) Don't give Git_Hub branch name in (Capitals Letters) becz docker repository names doesn't take capitals letters.
+ 4) DONT Mention pollscm && build-periodcally && GIT-HUB(webhooks) in Jenkinsfile becz it doesn't works in Multibranch-pipeline projects.
  5) Alternative method is  Periodically if not otherwise run..
      ![alternative](https://user-images.githubusercontent.com/111736742/218860470-965d4c40-82dc-49b1-bc6f-db9eecc1e586.png)
 
