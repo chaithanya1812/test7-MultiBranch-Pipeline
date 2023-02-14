@@ -42,6 +42,14 @@ pipeline {
                     }
            }
         }
+        stage('Delete con & Img'){
+            steps{
+                sh 'docker stop ${BRANCH_NAME}'
+                sh 'docker rm ${BRANCH_NAME}'
+                sh 'docker rmi ${BRANCH_NAME}'
+                sh 'docker rmi $(docker images -q -f dangling=true)'
+              }
+        }
         stage('Run containers'){
             steps{
                 sh 'docker run -d --name c3 -p 8092:8080 chaitu1812/${BRANCH_NAME}'   
