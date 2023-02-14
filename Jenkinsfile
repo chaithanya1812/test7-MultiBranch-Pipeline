@@ -44,10 +44,10 @@ pipeline {
         }
         stage('Delete con & Img'){
             steps{
-                sh 'docker stop ${BRANCH_NAME}'
-                sh 'docker rm ${BRANCH_NAME}'
-                sh 'docker rmi ${BRANCH_NAME}'
-                sh 'docker rmi $(docker images -q -f dangling=true)'
+                sh 'docker stop ${BRANCH_NAME} || true'
+                sh 'docker rm ${BRANCH_NAME} || true'
+                sh 'docker rmi ${BRANCH_NAME} || true'
+                sh 'docker rmi $(docker images -q -f dangling=true) || true'
               }
         }
         stage('Run containers'){
