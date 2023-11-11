@@ -21,7 +21,7 @@ sh "env"
 stage('upload to artifact'){
 steps{
 script{
-if(!TAG_NAME){
+if(!env.TAG_NAME){
 env.Push_code="false"
 }else{
 env.Push_code="true"
