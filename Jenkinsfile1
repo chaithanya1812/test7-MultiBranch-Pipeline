@@ -14,7 +14,7 @@ sh "env"
 }
 stage('Thrid'){
 steps{
-echo "this is chaithanay is chaithnay"
+echo "this is chaithanay is ramam chaithnay"
 sh "env"
 }
 }
