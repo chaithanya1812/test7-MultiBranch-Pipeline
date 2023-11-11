@@ -26,8 +26,8 @@ env.Push_code="false"
 }else{
 env.Push_code="true"
 }
-if(env.Push_code=="true"){
-echo "uploading to artifacts"
+if(env.Push_code=="false"){
+echo "uploading not to artifacts"
 }
 }
 }
