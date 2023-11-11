@@ -18,5 +18,19 @@ echo "this is chaithanay kkkkj"
 sh "env"
 }
 }
+stage('upload to artifact'){
+steps{
+script{
+if(!TAG_NAME){
+env.Push_code="false"
+}else{
+env.Push_code="true"
+}
+if(env.Push_code=="true"){
+echo "uploading to artifacts"
+}
+}
+}
+}
 }
 }
