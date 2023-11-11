@@ -1,4 +1,26 @@
-pipeline {
+pipeline{
+ agent any
+    stages{
+        stage('first'){
+            steps{
+            echo "first-satge ${BRANCH_NAME}"
+            }
+        }
+        stage('second'){
+            steps{
+                echo "Second-stage ${BRANCH_NAME}"
+            }
+
+
+        }
+        
+
+
+    }
+
+}
+
+/*pipeline {
     agent {
         label 'jenkins-slave'
     }
@@ -54,7 +76,7 @@ pipeline {
             steps{
                 sh 'docker run -d --name ${BRANCH_NAME}  -p 8091:8080 chaitu1812/${BRANCH_NAME}'   
             }
-        }
+        }*/
 
     }
 }
