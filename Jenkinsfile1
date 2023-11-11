@@ -1,0 +1,15 @@
+pipeline{
+agent any
+stages{
+stage('first'){
+steps{
+echo "this is first ${BRANCH_NAME}"
+}
+}
+stage('second'){
+steps{
+echo "this is second stage ${BRANCH_NAME}"
+}
+}
+}
+}
