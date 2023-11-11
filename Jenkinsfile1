@@ -8,7 +8,7 @@ echo "this is first ${BRANCH_NAME}"
 }
 stage('second'){
 steps{
-echo "this is second stage ${BRANCH_NAME} heelo"
+echo "this is second stage ${BRANCH_NAME} This from prod"
 }
 }
 }
