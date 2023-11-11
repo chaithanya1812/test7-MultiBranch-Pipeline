@@ -13,10 +13,11 @@ echo "this is second stage ${BRANCH_NAME} heelo"
 }
 stage('Thrid'){
 when{
-branch 'dev'
+branch 'prod'
 }
 steps{
 echo "this is chaithanay"
+sh "env"
 }
 }
 }
