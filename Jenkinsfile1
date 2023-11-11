@@ -12,6 +12,9 @@ echo "this is second stage ${BRANCH_NAME} heelo"
 }
 }
 stage('Thrid'){
+when{
+branch 'prod'
+}
 steps{
 echo "this is chaithanay"
 }
