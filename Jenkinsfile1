@@ -16,7 +16,7 @@ when{
 branch 'prod'
 }
 steps{
-echo "this is chaithanay"
+echo "this is chaithanay kkkkj"
 sh "env"
 }
 }
