@@ -6,4 +6,3 @@ LABEL BranchName $branch
 COPY ./target/*.war  /usr/local/tomcat/webapps/
 WORKDIR /usr/local/tomcat/webapps/
 
-hfgghgf
