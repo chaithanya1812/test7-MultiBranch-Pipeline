@@ -13,7 +13,7 @@ echo "This is ut branch"
 }
 
 }
-/*stage('one1'){
+*/stage('one1'){
 when {
 environment name:'BRANCH_NAME', value: 'ut'
 }
