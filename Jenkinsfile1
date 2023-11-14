@@ -1,7 +1,5 @@
 pipeline{
-agent {
-label 'hello'
-}
+agent any
 tools{
 maven 'mymaven'
 }
@@ -15,7 +13,7 @@ echo "This is ut branch"
 }
 
 }
-stage('one1'){
+/*stage('one1'){
 when {
 environment name:'BRANCH_NAME', value: 'ut'
 }
@@ -28,7 +26,7 @@ sh "mvn sonar:sonar -Dsonar.host.url=http://3.110.209.229:9000/ -Dsonar.login=sq
 
 }
 }
-}
+} /*
 
 }
 
