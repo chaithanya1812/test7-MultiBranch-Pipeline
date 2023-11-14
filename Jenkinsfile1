@@ -1,36 +1,26 @@
 pipeline{
 agent any
 stages{
-stage('first'){
+stage('one'){
+when {
+expression{ env.BRANCH_NAME.equals('ut') }
+}
+  steps{
+echo "This is ut branch"
+}
+
+}
+stage('two'){
+when {
+expression{ env.BRANCH_NAME.equals('prod') }
+}
 steps{
-echo "this is first ${BRANCH_NAME}"
+echo "this  prod branch somethind"
 }
 }
-stage('second'){
-steps{
-echo "this is second stage ${BRANCH_NAME} heelo"
-sh "env"
+
 }
+
+
 }
-stage('Thrid'){
-steps{
-echo "this is chaithanay is ramam chaithnay"
-sh "env"
-}
-}
-stage('upload to artifact'){
-steps{
-script{
-if(!env.TAG_NAME){
-env.Push_code="false"
-}else{
-env.Push_code="true"
-}
-if(env.Push_code=="false"){
-echo "uploading not to artifacts"
-}
-}
-}
-}
-}
-}
+
