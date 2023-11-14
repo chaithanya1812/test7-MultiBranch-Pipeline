@@ -22,6 +22,7 @@ environment name:'BRANCH_NAME', value: 'ut'
   steps{
 script{
 if(env.BRANCH_NAME == "ut"){
+//hello
 sh "mvn sonar:sonar -Dsonar.host.url=http://3.110.209.229:9000/ -Dsonar.login=squ_a185a6dc43de50c389e7ce7960931044fbbe185f  -Dsonar.projectName=${env.BRANCH_NAME} -Dsonar.projectKey=${env.BRANCH_NAME} -Dsonar.qualitygate.wait"
 } 
 
