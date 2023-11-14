@@ -3,7 +3,7 @@ agent any
 stages{
 stage('one'){
 when {
-expression{ env.BRANCH_NAME.equals('ut') }
+expression{ env.BRANCH_NAME.equals('prod') }
 }
   steps{
 echo "This is ut branch"
@@ -12,7 +12,7 @@ echo "This is ut branch"
 }
 stage('two'){
 when {
-expression{ env.BRANCH_NAME.equals('prod') }
+branch 'prod'
 }
 steps{
 echo "this  prod branch somethind"
