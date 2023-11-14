@@ -10,6 +10,15 @@ echo "This is ut branch"
 }
 
 }
+stage('one'){
+when {
+environment name:'env.BRANCH_NAME', value: 'ut'
+}
+  steps{
+echo "This is ut branch"
+}
+
+}
 
 }
 
